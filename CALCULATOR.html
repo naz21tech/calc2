@@ -8,26 +8,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input   type="text"  id="display"    disabled   /> <br>
-<button onclick="delVal('')">C</button>
-<button  onclick="addInput('/')"> /</button>
-<button  onclick="addInput('*')"> *</button>
-<button onclick="addInput('-')" >  - </button> <br>
-<button   onclick="addInput('7')"> 7</button>
-<button  onclick="addInput('8')"> 8</button>
-<button  onclick="addInput('9')"> 9</button>
-<button  onclick="addInput('+')"> +</button> <br>
-<button  onclick="addInput('4')"> 4</button>
-<button  onclick="addInput('5')"> 5</button>
-<button  onclick="addInput('6')"> 6</button>
-<button  onclick="calculateResult()"> =</button>
-<br>
-<button onclick="addInput('1')" > 1</button>
-<button  onclick="addInput('2')"> 2</button>
-<button  onclick="addInput('3')"> 3</button>
-<button  onclick="addInput('0')"> 0</button>
-<script src="./script.js"></script>
+  <div class="calculator" role="application" aria-label="Calculator">
+    <input type="text" id="display" disabled aria-label="display" />
+
+    <div class="keys" role="group" aria-label="calculator keys">
+      <button class="btn clear" onclick="delVal('')">C</button>
+      <button class="btn operator" onclick="addInput('/')">/</button>
+      <button class="btn operator" onclick="addInput('*')">*</button>
+      <button class="btn operator" onclick="addInput('-')">−</button>
+
+      <button class="btn" onclick="addInput('7')">7</button>
+      <button class="btn" onclick="addInput('8')">8</button>
+      <button class="btn" onclick="addInput('9')">9</button>
+      <button class="btn operator" onclick="addInput('+')">+</button>
+
+      <button class="btn" onclick="addInput('4')">4</button>
+      <button class="btn" onclick="addInput('5')">5</button>
+      <button class="btn" onclick="addInput('6')">6</button>
+      <button class="btn equals" onclick="calculateResult()">=</button>
+
+      <button class="btn" onclick="addInput('1')">1</button>
+      <button class="btn" onclick="addInput('2')">2</button>
+      <button class="btn" onclick="addInput('3')">3</button>
+      <button class="btn zero" onclick="addInput('0')">0</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
-<html>
     
